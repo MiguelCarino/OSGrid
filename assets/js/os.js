@@ -279,7 +279,7 @@ const osData = {
     },
     'Debian': {
         name: 'Debian',
-        description: 'Debian is a Unix-like operating system consisting entirely of free software.',
+        description: 'For users who seek a user-friendly system that prioritize accesibility, compatibility and stability over the latest features and package versions.',
         downloadUrl: 'https://get.debian.org/images/release/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-gnome.iso',
         setupScriptUrl: 'https://setupscript/debian',
         toolchain: {
@@ -313,14 +313,15 @@ const osData = {
         ],
         packageFormat: 'DEB',
         packageManager: [
-            { name: 'APT', example: 'sudo apt install firefox' }
+            { name: 'APT', example: 'sudo apt install firefox' },
+            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://packages.debian.org/',
         appStore: { name: 'Snap Store', url: 'https://snapcraft.io/store' }
     },
     'Fedora': {
         name: 'Fedora',
-        description: 'Fedora is a Linux distribution developed by the Fedora Project.',
+        description: 'For users can you who seek a user-friendly system that brings latest 100% open-source technologies, features and solutions.',
         downloadUrl: 'https://download.fedoraproject.org/pub/fedora/linux/releases/40/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-40-1.14.iso',
         setupScriptUrl: 'https://setupscript/fedora',
         toolchain: {
@@ -335,8 +336,8 @@ const osData = {
             'OpenSSL 3.2.1': 'https://www.openssl.org/',
             'TLS 1.2, 1.3': 'https://tools.ietf.org/html/rfc8446'
         },
-        releaseModel: 'Fixed Release',
-        releaseModelDesc: 'Releases major updates periodically of core components and packages with a focus on stability.',
+        releaseModel: 'Semi-rolling Release',
+        releaseModelDesc: 'Releases major updates periodically of core components while continuously updating packages throughout each release cycle.',
         latestRelease: 'Fedora 40',
         latestReleaseUrl: 'https://fedoraproject.org/',
         supportUntil: 'May 2025',
@@ -362,7 +363,7 @@ const osData = {
     },
     'openSUSE': {
         name: 'openSUSE',
-        description: 'openSUSE is a community-driven project that aims to promote the use of Linux.',
+        description: 'For users who seek a user-friendly system that offers both stability (Leap) and cutting-edge options (Tumbleweed), with packages either stable or close to upstream versions.',
         downloadUrl: 'https://www.opensuse.org/',
         setupScriptUrl: 'https://setupscript/opensuse',
         toolchain: {
@@ -404,7 +405,7 @@ const osData = {
     },
     'Gentoo': {
         name: 'Gentoo',
-        description: 'Gentoo is a flexible Linux distribution aimed at developers and professionals.',
+        description: 'For users who seek an advanced system that offers maximum performance and customatization by allowing them to compile packages from source.',
         downloadUrl: 'https://www.gentoo.org/downloads/',
         setupScriptUrl: 'https://setupscript/gentoo',
         toolchain: {
@@ -438,14 +439,15 @@ const osData = {
         ],
         packageFormat: 'Source',
         packageManager: [
-            { name: 'Portage', example: 'emerge --ask www-client/firefox' }
+            { name: 'Portage', example: 'emerge --ask www-client/firefox' },
+            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://packages.gentoo.org/',
         appStore: { name: 'N/A', url: 'N/A' }
     },
     'NixOS': {
         name: 'NixOS',
-        description: 'NixOS is a Linux distribution that uses the Nix package manager.',
+        description: 'For users who require an advanced system which is reliable, with reproducible system configurations, and a focus on development and deployment environments.',
         downloadUrl: 'https://nixos.org/download.html',
         setupScriptUrl: 'https://setupscript/nixos',
         toolchain: {
@@ -479,14 +481,15 @@ const osData = {
         ],
         packageFormat: 'Nix',
         packageManager: [
-            { name: 'Nix', example: 'nix-env -iA nixpkgs.firefox' }
+            { name: 'Nix', example: 'nix-env -iA nixpkgs.firefox' },
+            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://nixos.org/nixos/packages.html',
         appStore: { name: 'N/A', url: 'N/A' }
     },
-    'Arch Linux': {
-        name: 'Arch Linux',
-        description: 'Arch Linux is a lightweight and flexible Linux distribution that tries to Keep It Simple.',
+    'Arch': {
+        name: 'Arch',
+        description: 'For users who seek a highly customizable and lightweight system that they can build from scratch, and want to keep up with upstream versions of all packages as much as possible.',
         downloadUrl: 'https://www.archlinux.org/download/',
         setupScriptUrl: 'https://setupscript/arch',
         toolchain: {
@@ -520,7 +523,8 @@ const osData = {
         ],
         packageFormat: 'PKGBUILD',
         packageManager: [
-            { name: 'Pacman', example: 'sudo pacman -S firefox' }
+            { name: 'Pacman', example: 'sudo pacman -S firefox' },
+            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://aur.archlinux.org/',
         appStore: { name: 'AUR', url: 'https://aur.archlinux.org/' }
@@ -554,7 +558,7 @@ function selectMainSquare(os, element) {
     } else if (os === 'macOS') {
         squaresContent = ['macOS Big Sur', 'macOS Sonoma'];
     } else if (os === 'Linux') {
-        squaresContent = ['Debian', 'Fedora', 'openSUSE', 'Gentoo', 'NixOS', 'Arch Linux'];
+        squaresContent = ['Debian', 'Fedora', 'openSUSE', 'Gentoo', 'NixOS', 'Arch'];
     }
 
     secondRow.innerHTML = squaresContent.map(content => 
@@ -577,7 +581,7 @@ function changeContent(content) {
                 <button class="setup-button" onclick="copyToClipboard('${data.setupScriptUrl}')">Setup Script</button>
             </div>
             <div class="horizontal-division-small">
-                <h4>Toolchain</h4>
+                <h4>Toolchain (updated monthly)</h4>
                 <pre>${generateLinks(data.toolchain)}</pre>
             </div>
         </div>
