@@ -1,0 +1,157 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    transition: height 0.3s;
+}
+
+.square {
+    flex: 1;
+    height: 100%;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    border: 4px solid #000000;
+}
+
+.square:hover {
+    background-color: grey;
+}
+
+.square.selected {
+    background-color: darkgrey;
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.small-square {
+    flex: 1;
+    height: 10vh; /* Adjust height to match the reduced second-row height */
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+.small-square:hover, .small-square.selected {
+    background-color: darkgrey;
+}
+
+.big-square {
+    width: 100%;
+    height: 59vh;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.horizontal-division-large {
+    flex: 3; /* 75% of the width */
+    /*border: 1px solid #ccc;*/
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.horizontal-division-small {
+    flex: 1; /* 25% of the width */
+    /*border: 1px solid #ccc;*/
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.download-button, .setup-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+}
+
+.setup-button {
+    background-color: #28a745;
+}
+
+.notification {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .first-row, .second-row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .square, .small-square {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .big-square {
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .horizontal-division-large, .horizontal-division-small {
+        flex: none;
+        width: 100%;
+    }
+}
