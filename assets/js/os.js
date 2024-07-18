@@ -1,6 +1,7 @@
 const osData = {
     'Windows 10': {
         name: 'Windows 10',
+        logo: 'https://carino.systems/assets/images/windows10.webp',
         description: 'Windows 10 is an operating system developed by Microsoft.',
         officialUrl: '',
         downloadUrl:'https://www.microsoft.com/en-us/software-download/windows10',
@@ -42,6 +43,7 @@ const osData = {
     },
     'Windows 11': {
         name: 'Windows 11',
+        logo: 'https://carino.systems/assets/images/windows11.webp',
         description: 'Windows 11 is an operating system developed by Microsoft.',
         officialUrl: '',
         downloadUrl:'https://www.microsoft.com/en-us/software-download/windows11',
@@ -83,6 +85,7 @@ const osData = {
     },
     'Windows Server 2016': {
         name: 'Windows Server 2016',
+        logo: 'https://carino.systems/assets/images/windows11.webp',
         description: 'Windows Server 2016 is a server operating system produced by Microsoft.',
         officialUrl: '',
         downloadUrl:'https://www.microsoft.com/en-us/software-download/windows-server-2016',
@@ -124,6 +127,7 @@ const osData = {
     },
     'Windows Server 2019': {
         name: 'Windows Server 2019',
+        logo: 'https://carino.systems/assets/images/windows11.webp',
         description: 'Windows Server 2019 is a server operating system produced by Microsoft.',
         officialUrl: '',
         downloadUrl:'https://www.microsoft.com/en-us/software-download/windows-server-2019',
@@ -165,6 +169,7 @@ const osData = {
     },
     'Windows Server 2022': {
         name: 'Windows Server 2022',
+        logo: 'https://carino.systems/assets/images/windows11.webp',
         description: 'Windows Server 2022 is a server operating system produced by Microsoft.',
         officialUrl: '',
         downloadUrl:'https://www.microsoft.com/en-us/software-download/windows-server-2022',
@@ -206,6 +211,7 @@ const osData = {
     },
     'macOS Big Sur': {
         name: 'macOS Big Sur',
+        logo: 'https://carino.systems/assets/images/bigsur.webp',
         description: 'macOS Big Sur is an operating system developed by Apple.',
         officialUrl: '',
         downloadUrl:'https://www.apple.com/macos/big-sur/',
@@ -246,6 +252,7 @@ const osData = {
     },
     'macOS Sonoma': {
         name: 'macOS Sonoma',
+        logo: 'https://carino.systems/assets/images/sonoma.webp',
         description: 'macOS Sonoma is an operating system developed by Apple.',
         officialUrl: '',
         downloadUrl:'https://www.apple.com/macos/sonoma/',
@@ -286,6 +293,7 @@ const osData = {
     },
     'Debian': {
         name: 'Debian',
+        logo: 'https://carino.systems/assets/images/debian.webp',
         description: 'For users who seek a user-friendly system that prioritize accesibility, compatibility and stability over the latest features and package versions.',
         officialUrl: '',
         downloadUrl:'https://get.debian.org/images/release/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-gnome.iso',
@@ -329,6 +337,7 @@ const osData = {
     },
     'Fedora': {
         name: 'Fedora',
+        logo: 'https://carino.systems/assets/images/fedora.webp',
         description: 'For users who seek a user-friendly system that brings the latest 100% open-source technologies, features and solutions.',
         officialUrl: '',
         downloadUrl:'https://download.fedoraproject.org/pub/fedora/linux/releases/40/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-40-1.14.iso',
@@ -372,6 +381,7 @@ const osData = {
     },
     'openSUSE': {
         name: 'openSUSE',
+        logo: 'https://carino.systems/assets/images/opensuse.webp',
         description: 'For users who seek a user-friendly system that offers both stability (Leap) and cutting-edge options (Tumbleweed), with packages either stable or close to upstream versions.',
         officialUrl: '',
         downloadUrl:'https://www.opensuse.org/',
@@ -415,6 +425,7 @@ const osData = {
     },
     'Gentoo': {
         name: 'Gentoo',
+        logo: 'https://carino.systems/assets/images/gentoo.webp',
         description: 'For users who seek an advanced system that offers maximum performance and customatization by allowing them to compile packages from source.',
         officialUrl: '',
         downloadUrl:'https://www.gentoo.org/downloads/',
@@ -458,6 +469,7 @@ const osData = {
     },
     'NixOS': {
         name: 'NixOS',
+        logo: 'https://carino.systems/assets/images/nixos.webp',
         description: 'For users who require an advanced system with reproducible system configurations, and a focus on development and deployment environments.',
         officialUrl: '',
         downloadUrl:'https://nixos.org/download.html',
@@ -501,6 +513,7 @@ const osData = {
     },
     'Arch': {
         name: 'Arch',
+        logo: 'https://carino.systems/assets/images/arch.webp',
         description: 'For users who seek a highly customizable and lightweight system they can setup from scratch, and want to keep up with upstream versions of all packages as much as possible.',
         officialUrl: '',
         downloadUrl:'https://www.archlinux.org/download/',
@@ -589,6 +602,7 @@ function changeContent(content) {
         <div class="row">
             <div class="horizontal-division-large">
                 <h3>${data.name}</h3>
+                <img src="${data.logo}" style="max-width: 100px; max-height: 100px; width: auto; height: auto;" alt="Image description"></img>
                 <p>${data.description}</p>
                 <a href="${data.officialUrl}" class="download-button">Official Site</a>
                 <a href="${data.downloadUrl}" class="download-button">Download</a>
