@@ -16,7 +16,7 @@ main {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     transition: height 0.3s;
 }
 
@@ -69,13 +69,14 @@ main {
 .big-square {
     width: 100%;
     height: 59vh;
-    background-color: lightblue;
+    background-color: #008080;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .row {
@@ -97,7 +98,188 @@ main {
     /*border: 1px solid #ccc;*/
     margin: 5px;
     padding: 10px;
+    box-sizing: border-box;/* Basic Reset */
+    background-color: #162e965b;
+    border-radius: 10px;
+* {
+    font-family: LiberationSans;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Navigation Bar */
+nav {
+    background: #0b50aa;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Link Styling */
+a:link {
+    color: rgb(255, 72, 0);
+    text-decoration: none; /* Removes text underline */
+}
+
+a:visited {
+    color: rgb(235, 248, 51);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+a:active {
+    color: rgb(243, 243, 248);
+} 
+
+/* Header Styling */
+header {
+    background: #000000;
+    color: #333;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Ensure main takes up all available space */
+    background-color: #000000;
+}
+
+/* Highlight Container */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 90%;
+}
+
+/* Highlight Div Style */
+.highlight {
+    flex: 1 1 calc(33.333% - 40px);
+    height: 30vh;
+    background: url('https://picsum.photos/200/300') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.highlight a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.highlight:hover {
+    transform: scale(1.02);
+}
+
+.highlight h2 {
+    margin: 0;
+}
+
+/* Content Div Style */
+.content {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #e4e4e4;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background: #0b50aa;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    /*margin-top: 20px;*/
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Resolution Styles */
+@media screen and (max-width: 480px) {
+
+    body,
+    html {
+        min-width: 320px
+    }
+    .main-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
 }
 
 .download-button, .setup-button {
@@ -123,8 +305,8 @@ main {
     text-align: center;
     padding: 10px;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 5vh;
+    right: 2vh;
     z-index: 1000;
     border-radius: 5px;
     display: none;

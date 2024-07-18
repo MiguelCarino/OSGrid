@@ -2,7 +2,8 @@ const osData = {
     'Windows 10': {
         name: 'Windows 10',
         description: 'Windows 10 is an operating system developed by Microsoft.',
-        downloadUrl: 'https://www.microsoft.com/en-us/software-download/windows10',
+        officialUrl: '',
+        downloadUrl:'https://www.microsoft.com/en-us/software-download/windows10',
         setupScriptUrl: 'https://setupscript/windows10',
         toolchain: {
             'Windows SDK 10': 'https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/',
@@ -34,7 +35,7 @@ const osData = {
         ],
         packageFormat: 'MSIX',
         packageManager: [
-            { name: 'Windows Package Manager (winget)', example: 'winget install Mozilla.Firefox' }
+            { name: 'Windows Package Manager (winget)', exampleUpdate: '', example: 'winget install Mozilla.Firefox' }
         ],
         packageSource: 'https://winget.run/',
         appStore: { name: 'Microsoft Store', url: 'https://www.microsoft.com/store' }
@@ -42,7 +43,8 @@ const osData = {
     'Windows 11': {
         name: 'Windows 11',
         description: 'Windows 11 is an operating system developed by Microsoft.',
-        downloadUrl: 'https://www.microsoft.com/en-us/software-download/windows11',
+        officialUrl: '',
+        downloadUrl:'https://www.microsoft.com/en-us/software-download/windows11',
         setupScriptUrl: 'https://setupscript/windows11',
         toolchain: {
             'Windows SDK 11': 'https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/',
@@ -74,7 +76,7 @@ const osData = {
         ],
         packageFormat: 'MSIX',
         packageManager: [
-            { name: 'Windows Package Manager (winget)', example: 'winget install Mozilla.Firefox' }
+            { name: 'Windows Package Manager (winget)', exampleUpdate: '', example: 'winget install Mozilla.Firefox' }
         ],
         packageSource: 'https://winget.run/',
         appStore: { name: 'Microsoft Store', url: 'https://www.microsoft.com/store' }
@@ -82,7 +84,8 @@ const osData = {
     'Windows Server 2016': {
         name: 'Windows Server 2016',
         description: 'Windows Server 2016 is a server operating system produced by Microsoft.',
-        downloadUrl: 'https://www.microsoft.com/en-us/software-download/windows-server-2016',
+        officialUrl: '',
+        downloadUrl:'https://www.microsoft.com/en-us/software-download/windows-server-2016',
         setupScriptUrl: 'https://setupscript/windows-server-2016',
         toolchain: {
             'Windows SDK 10': 'https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/',
@@ -114,7 +117,7 @@ const osData = {
         ],
         packageFormat: 'MSIX',
         packageManager: [
-            { name: 'Windows Package Manager (winget)', example: 'winget install Mozilla.Firefox' }
+            { name: 'Windows Package Manager (winget)', exampleUpdate: '', example: 'winget install Mozilla.Firefox' }
         ],
         packageSource: 'https://winget.run/',
         appStore: { name: 'Microsoft Store', url: 'https://www.microsoft.com/store' }
@@ -122,7 +125,8 @@ const osData = {
     'Windows Server 2019': {
         name: 'Windows Server 2019',
         description: 'Windows Server 2019 is a server operating system produced by Microsoft.',
-        downloadUrl: 'https://www.microsoft.com/en-us/software-download/windows-server-2019',
+        officialUrl: '',
+        downloadUrl:'https://www.microsoft.com/en-us/software-download/windows-server-2019',
         setupScriptUrl: 'https://setupscript/windows-server-2019',
         toolchain: {
             'Windows SDK 10': 'https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/',
@@ -154,7 +158,7 @@ const osData = {
         ],
         packageFormat: 'MSIX',
         packageManager: [
-            { name: 'Windows Package Manager (winget)', example: 'winget install Mozilla.Firefox' }
+            { name: 'Windows Package Manager (winget)', exampleUpdate: '', example: 'winget install Mozilla.Firefox' }
         ],
         packageSource: 'https://winget.run/',
         appStore: { name: 'Microsoft Store', url: 'https://www.microsoft.com/store' }
@@ -162,7 +166,8 @@ const osData = {
     'Windows Server 2022': {
         name: 'Windows Server 2022',
         description: 'Windows Server 2022 is a server operating system produced by Microsoft.',
-        downloadUrl: 'https://www.microsoft.com/en-us/software-download/windows-server-2022',
+        officialUrl: '',
+        downloadUrl:'https://www.microsoft.com/en-us/software-download/windows-server-2022',
         setupScriptUrl: 'https://setupscript/windows-server-2022',
         toolchain: {
             'Windows SDK 11': 'https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/',
@@ -194,7 +199,7 @@ const osData = {
         ],
         packageFormat: 'MSIX',
         packageManager: [
-            { name: 'Windows Package Manager (winget)', example: 'winget install Mozilla.Firefox' }
+            { name: 'Windows Package Manager (winget)', exampleUpdate: '', example: 'winget install Mozilla.Firefox' }
         ],
         packageSource: 'https://winget.run/',
         appStore: { name: 'Microsoft Store', url: 'https://www.microsoft.com/store' }
@@ -202,7 +207,8 @@ const osData = {
     'macOS Big Sur': {
         name: 'macOS Big Sur',
         description: 'macOS Big Sur is an operating system developed by Apple.',
-        downloadUrl: 'https://www.apple.com/macos/big-sur/',
+        officialUrl: '',
+        downloadUrl:'https://www.apple.com/macos/big-sur/',
         setupScriptUrl: 'https://setupscript/macosbigsur',
         toolchain: {
             'Xcode 12.5 (supported)': 'https://developer.apple.com/xcode/',
@@ -233,7 +239,7 @@ const osData = {
         ],
         packageFormat: 'PKG',
         packageManager: [
-            { name: 'Homebrew', example: 'brew install firefox' }
+            { name: 'Homebrew', exampleUpdate: '', example: 'brew install firefox' }
         ],
         packageSource: 'https://formulae.brew.sh/',
         appStore: { name: 'Mac App Store', url: 'https://www.apple.com/app-store/' }
@@ -241,7 +247,8 @@ const osData = {
     'macOS Sonoma': {
         name: 'macOS Sonoma',
         description: 'macOS Sonoma is an operating system developed by Apple.',
-        downloadUrl: 'https://www.apple.com/macos/sonoma/',
+        officialUrl: '',
+        downloadUrl:'https://www.apple.com/macos/sonoma/',
         setupScriptUrl: 'https://setupscript/macossoma',
         toolchain: {
             'Xcode 13.0 (supported)': 'https://developer.apple.com/xcode/',
@@ -272,7 +279,7 @@ const osData = {
         ],
         packageFormat: 'PKG',
         packageManager: [
-            { name: 'Homebrew', example: 'brew install firefox' }
+            { name: 'Homebrew', exampleUpdate: '', example: 'brew install firefox' }
         ],
         packageSource: 'https://formulae.brew.sh/',
         appStore: { name: 'Mac App Store', url: 'https://www.apple.com/app-store/' }
@@ -280,7 +287,8 @@ const osData = {
     'Debian': {
         name: 'Debian',
         description: 'For users who seek a user-friendly system that prioritize accesibility, compatibility and stability over the latest features and package versions.',
-        downloadUrl: 'https://get.debian.org/images/release/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-gnome.iso',
+        officialUrl: '',
+        downloadUrl:'https://get.debian.org/images/release/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-gnome.iso',
         setupScriptUrl: 'https://setupscript/debian',
         toolchain: {
             'GCC 12.2.0': 'https://gcc.gnu.org/',
@@ -313,16 +321,17 @@ const osData = {
         ],
         packageFormat: 'DEB',
         packageManager: [
-            { name: 'APT', example: 'sudo apt install firefox' },
-            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
+            { name: 'APT', exampleUpdate: 'sudo apt update', example: 'sudo apt install firefox' },
+            { name: 'Flatpak', exampleUpdate: 'flatpak update', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://packages.debian.org/',
         appStore: { name: 'Snap Store', url: 'https://snapcraft.io/store' }
     },
     'Fedora': {
         name: 'Fedora',
-        description: 'For users can you who seek a user-friendly system that brings latest 100% open-source technologies, features and solutions.',
-        downloadUrl: 'https://download.fedoraproject.org/pub/fedora/linux/releases/40/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-40-1.14.iso',
+        description: 'For users who seek a user-friendly system that brings the latest 100% open-source technologies, features and solutions.',
+        officialUrl: '',
+        downloadUrl:'https://download.fedoraproject.org/pub/fedora/linux/releases/40/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-40-1.14.iso',
         setupScriptUrl: 'https://setupscript/fedora',
         toolchain: {
             'GCC 14.1.1': 'https://gcc.gnu.org/',
@@ -355,8 +364,8 @@ const osData = {
         ],
         packageFormat: 'RPM',
         packageManager: [
-            { name: 'DNF', example: 'sudo dnf install firefox' },
-            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
+            { name: 'DNF', exampleUpdate: 'sudo dnf update', example: 'sudo dnf install firefox' },
+            { name: 'Flatpak', exampleUpdate: 'flatpak update', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://packages.fedoraproject.org/',
         appStore: { name: 'GNOME Software', url: 'https://wiki.gnome.org/Apps/Software' }
@@ -364,7 +373,8 @@ const osData = {
     'openSUSE': {
         name: 'openSUSE',
         description: 'For users who seek a user-friendly system that offers both stability (Leap) and cutting-edge options (Tumbleweed), with packages either stable or close to upstream versions.',
-        downloadUrl: 'https://www.opensuse.org/',
+        officialUrl: '',
+        downloadUrl:'https://www.opensuse.org/',
         setupScriptUrl: 'https://setupscript/opensuse',
         toolchain: {
             'GCC 10.2.1': 'https://gcc.gnu.org/',
@@ -397,8 +407,8 @@ const osData = {
         ],
         packageFormat: 'RPM',
         packageManager: [
-            { name: 'Zypper', example: 'sudo zypper install firefox' },
-            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
+            { name: 'Zypper', exampleUpdate: 'sudo zypper update', example: 'sudo zypper install firefox' },
+            { name: 'Flatpak', exampleUpdate: 'flatpak update', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://build.opensuse.org/',
         appStore: { name: 'YaST', url: 'https://en.opensuse.org/Portal:YaST' }
@@ -406,7 +416,8 @@ const osData = {
     'Gentoo': {
         name: 'Gentoo',
         description: 'For users who seek an advanced system that offers maximum performance and customatization by allowing them to compile packages from source.',
-        downloadUrl: 'https://www.gentoo.org/downloads/',
+        officialUrl: '',
+        downloadUrl:'https://www.gentoo.org/downloads/',
         setupScriptUrl: 'https://setupscript/gentoo',
         toolchain: {
             'GCC 10.2.0': 'https://gcc.gnu.org/',
@@ -439,16 +450,17 @@ const osData = {
         ],
         packageFormat: 'Source',
         packageManager: [
-            { name: 'Portage', example: 'emerge --ask www-client/firefox' },
-            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
+            { name: 'Portage', exampleUpdate: 'sudo emerge -uDU @world', example: 'emerge --ask www-client/firefox' },
+            { name: 'Flatpak', exampleUpdate: 'flatpak update', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://packages.gentoo.org/',
         appStore: { name: 'N/A', url: 'N/A' }
     },
     'NixOS': {
         name: 'NixOS',
-        description: 'For users who require an advanced system which is reliable, with reproducible system configurations, and a focus on development and deployment environments.',
-        downloadUrl: 'https://nixos.org/download.html',
+        description: 'For users who require an advanced system with reproducible system configurations, and a focus on development and deployment environments.',
+        officialUrl: '',
+        downloadUrl:'https://nixos.org/download.html',
         setupScriptUrl: 'https://setupscript/nixos',
         toolchain: {
             'GCC 10.3.0': 'https://gcc.gnu.org/',
@@ -481,16 +493,17 @@ const osData = {
         ],
         packageFormat: 'Nix',
         packageManager: [
-            { name: 'Nix', example: 'nix-env -iA nixpkgs.firefox' },
-            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
+            { name: 'Nix', exampleUpdate: '', example: 'nix-env -iA nixpkgs.firefox' },
+            { name: 'Flatpak', exampleUpdate: 'flatpak update', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://nixos.org/nixos/packages.html',
         appStore: { name: 'N/A', url: 'N/A' }
     },
     'Arch': {
         name: 'Arch',
-        description: 'For users who seek a highly customizable and lightweight system that they can build from scratch, and want to keep up with upstream versions of all packages as much as possible.',
-        downloadUrl: 'https://www.archlinux.org/download/',
+        description: 'For users who seek a highly customizable and lightweight system they can setup from scratch, and want to keep up with upstream versions of all packages as much as possible.',
+        officialUrl: '',
+        downloadUrl:'https://www.archlinux.org/download/',
         setupScriptUrl: 'https://setupscript/arch',
         toolchain: {
             'GCC 10.2.0': 'https://gcc.gnu.org/',
@@ -523,8 +536,8 @@ const osData = {
         ],
         packageFormat: 'PKGBUILD',
         packageManager: [
-            { name: 'Pacman', example: 'sudo pacman -S firefox' },
-            { name: 'Flatpak', example: 'flatpak install flathub org.mozilla.firefox' }
+            { name: 'Pacman', exampleUpdate: 'sudo pacman -Syu', example: 'sudo pacman -S firefox' },
+            { name: 'Flatpak', exampleUpdate: 'flatpak update', example: 'flatpak install flathub org.mozilla.firefox' }
         ],
         packageSource: 'https://aur.archlinux.org/',
         appStore: { name: 'AUR', url: 'https://aur.archlinux.org/' }
@@ -539,7 +552,7 @@ function generateLinks(toolchain) {
 
 function selectMainSquare(os, element) {
     const firstRow = document.getElementById('firstRow');
-    firstRow.style.height = '5vh';
+    firstRow.style.height = '4vh';
 
     const secondRow = document.getElementById('secondRow');
     secondRow.style.height = '5vh';
@@ -577,6 +590,7 @@ function changeContent(content) {
             <div class="horizontal-division-large">
                 <h3>${data.name}</h3>
                 <p>${data.description}</p>
+                <a href="${data.officialUrl}" class="download-button">Official Site</a>
                 <a href="${data.downloadUrl}" class="download-button">Download</a>
                 <button class="setup-button" onclick="copyToClipboard('${data.setupScriptUrl}')">Setup Script</button>
             </div>
@@ -593,11 +607,8 @@ function changeContent(content) {
                 <a href="${data.supportUrl}">${data.supportUntil}</a>
                 <h4>Licensing</h4>
                 <a href="${data.licensingUrl}">${data.licensing}</a>
-            </div>
-            <div class="horizontal-division-small">
                 <h4>Release Model</h4>
                 <p>${data.releaseModel}</p>
-                <p>${data.releaseModelDesc}</p>
             </div>
             <div class="horizontal-division-small">
                 <h4>Official Representative</h4>
@@ -610,14 +621,19 @@ function changeContent(content) {
                 <a href="${data.fiscalManagementUrl}">${data.fiscalManagement}</a>
             </div>
             <div class="horizontal-division-small">
+                <h4>Package Manager(s)</h4>
+                <h5>Install a package</h5>
+                ${data.packageManager.map(pm => `<p>${pm.name}: ${pm.example}</p>`).join('')}
+                <h5>Update the system</h5>
+                 ${data.packageManager.map(pm => `<p>${pm.name}: ${pm.exampleUpdate}</p>`).join('')}
+            </div>
+            <div class="horizontal-division-small">
                 <h4>Package Format</h4>
                 <p>${data.packageFormat}</p>
-                <h4>Package Manager(s)</h4>
-                ${data.packageManager.map(pm => `<p>${pm.name}: ${pm.example}</p>`).join('')}
                 <h4>Package Source(s)</h4>
                 <p><a href="${data.packageSource}">${data.packageSource}</a></p>
-                <h4>App Store</h4>
-                <a href="${data.appStore.url}">${data.appStore.name}</a>
+                <!--<h4>App Store</h4>
+                <a href="${data.appStore.url}">${data.appStore.name}</a>-->
             </div>
         </div>
     `;
