@@ -5,7 +5,7 @@ const osData = {
         description: 'Windows 10 is an operating system developed by Microsoft.',
         officialUrl: '',
         downloadUrl:'https://www.microsoft.com/en-us/software-download/windows10',
-        setupScriptUrl: 'https://setupscript/windows10',
+        setupScriptUrl: 'https://miguelcarino.github.io/SimpleSetup/setup.ps1',
         toolchain: {
             'Windows SDK 10': 'https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/',
             'PowerShell 7.1': 'https://github.com/PowerShell/PowerShell',
@@ -297,7 +297,7 @@ const osData = {
         description: 'For users who seek a user-friendly system that prioritize accesibility, compatibility and stability over the latest features and package versions.',
         officialUrl: '',
         downloadUrl:'https://get.debian.org/images/release/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-gnome.iso',
-        setupScriptUrl: 'https://setupscript/debian',
+        setupScriptUrl: 'bash <(curl -s https://miguelcarino.github.io/SimpleSetup/setup.sh)',
         toolchain: {
             'GCC 12.2.0': 'https://gcc.gnu.org/',
             'Binutils 2.40': 'https://www.gnu.org/software/binutils/',
@@ -341,7 +341,7 @@ const osData = {
         description: 'For users who seek a user-friendly system that brings the latest 100% open-source technologies, features and solutions.',
         officialUrl: '',
         downloadUrl:'https://download.fedoraproject.org/pub/fedora/linux/releases/40/Workstation/x86_64/iso/Fedora-Workstation-Live-x86_64-40-1.14.iso',
-        setupScriptUrl: 'https://setupscript/fedora',
+        setupScriptUrl: 'bash <(curl -s https://miguelcarino.github.io/SimpleSetup/setup.sh)',
         toolchain: {
             'GCC 14.1.1': 'https://gcc.gnu.org/',
             'Binutils 2.41': 'https://www.gnu.org/software/binutils/',
@@ -385,7 +385,7 @@ const osData = {
         description: 'For users who seek a user-friendly system that offers both stability (Leap) and cutting-edge options (Tumbleweed), with packages either stable or close to upstream versions.',
         officialUrl: '',
         downloadUrl:'https://www.opensuse.org/',
-        setupScriptUrl: 'https://setupscript/opensuse',
+        setupScriptUrl: 'bash <(curl -s https://miguelcarino.github.io/SimpleSetup/setup.sh)',
         toolchain: {
             'GCC 10.2.1': 'https://gcc.gnu.org/',
             'Binutils 2.35.1': 'https://www.gnu.org/software/binutils/',
@@ -429,7 +429,7 @@ const osData = {
         description: 'For users who seek an advanced system that offers maximum performance and customatization by allowing them to compile packages from source.',
         officialUrl: '',
         downloadUrl:'https://www.gentoo.org/downloads/',
-        setupScriptUrl: 'https://setupscript/gentoo',
+        setupScriptUrl: 'bash <(curl -s https://miguelcarino.github.io/SimpleSetup/setup.sh)',
         toolchain: {
             'GCC 10.2.0': 'https://gcc.gnu.org/',
             'Binutils 2.35.1': 'https://www.gnu.org/software/binutils/',
@@ -473,7 +473,7 @@ const osData = {
         description: 'For users who require an advanced system with reproducible system configurations, and a focus on development and deployment environments.',
         officialUrl: '',
         downloadUrl:'https://nixos.org/download.html',
-        setupScriptUrl: 'https://setupscript/nixos',
+        setupScriptUrl: 'bash <(curl -s https://miguelcarino.github.io/SimpleSetup/setup.sh)',
         toolchain: {
             'GCC 10.3.0': 'https://gcc.gnu.org/',
             'Binutils 2.36.1': 'https://www.gnu.org/software/binutils/',
@@ -517,7 +517,7 @@ const osData = {
         description: 'For users who seek a highly customizable and lightweight system they can setup from scratch, and want to keep up with upstream versions of all packages as much as possible.',
         officialUrl: '',
         downloadUrl:'https://www.archlinux.org/download/',
-        setupScriptUrl: 'https://setupscript/arch',
+        setupScriptUrl: 'bash <(curl -s https://miguelcarino.github.io/SimpleSetup/setup.sh)',
         toolchain: {
             'GCC 10.2.0': 'https://gcc.gnu.org/',
             'Binutils 2.35.1': 'https://www.gnu.org/software/binutils/',
@@ -655,7 +655,7 @@ function changeContent(content) {
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(function() {
-        showNotification('Setup script URL copied to clipboard!');
+        showNotification('Setup script command copied to clipboard!');
     }, function(err) {
         console.error('Could not copy text: ', err);
     });
