@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        const response = await fetch('/assets/json/tiles.json');
+        const response = await fetch('assets/json/tiles.json');
         const tilesData = await response.json();
 
         const tilesContainer = document.querySelector('.tiles');
