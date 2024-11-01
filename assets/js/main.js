@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navContent = `
         <div class="logo"><a href="index.html"><b style="color: #ffffff">OS </b><b style="color: #000000">Grid</b></a></div>
         <ul>
-            <li><a href="https://github.com/MiguelCarino/SolutionGrid" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://github.com/MiguelCarino/OSGrid" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
         </ul>
     `;
     document.getElementById('navbar').innerHTML = navContent;
