@@ -1,4 +1,5 @@
 # OSGrid
 A web template to display Community, Enterprise and Commercial operating systems.
 https://miguelcarino.github.io/OSGrid/
-![image](https://github.com/MiguelCarino/OSGrid/assets/6355310/d4361e8d-bb85-4232-ae81-9ac3d0cfcf7b)
+![image](https://github.com/user-attachments/assets/6137541f-1386-43c9-adaa-fc19f2c0a6a5)
+
