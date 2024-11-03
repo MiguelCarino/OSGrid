@@ -11,13 +11,12 @@ body, html {
 }
 
 body {
-    background-size: 23em; /* Ensures the image fits without repeating */
+    background-size: 33%; /* Ensures the image fits without repeating */
     background-position: bottom right; /* Positions the image in the lower-right corner */
     background-repeat: no-repeat;
     background-color: #000000; /* Base background color */
     transition: background-color 0.3s ease, background-image 0.3s ease;
 }
-
 
 .container {
     display: flex;
@@ -67,7 +66,7 @@ body {
     border-radius: 10px;
     background-color: #e0e0e0;
     color: #676767;
-    max-width: 80%;
+    max-width: 40%;
     transition: background-color 0.3s ease, color 0.3s ease, font-family 0.3s ease;
 }
 
@@ -94,12 +93,18 @@ body {
         width: 45%; /* Adjust width for two tiles per row */
         max-width: 200px;
     }
+    .content-div {
+        max-width: 100%;
+    }
 }
 
 /* Small screens (e.g., phones): single tile per row */
 @media (max-width: 480px) {
     .tile {
         width: 100%; /* Full width for single column */
+    }
+    .content-div {
+        max-width: 100%;
     }
 }
 
