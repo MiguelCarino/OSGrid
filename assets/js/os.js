@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const contentDiv = document.querySelector('.content-div');
 
     try {
-        const response = await fetch('/assets/json/tiles.json');
+        const response = await fetch('assets/json/tiles.json');
         const tilesData = await response.json();
 
         function loadTiles(tiles, backFunction = null) {
