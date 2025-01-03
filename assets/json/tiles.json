@@ -304,7 +304,7 @@
                         "bg-img-top": "rhel9-bg.jpg",
                         "bg-img-full": "",
                         "img": "https://raw.githubusercontent.com/MiguelCarino/Carino-Systems/main/assets/images/rhel9.svg",
-                        "url": "https://releases.ubuntu.com/focal/"
+                        "url": "https://releases.ubuntu.com/noble/"
                     }
                 ]
             },
