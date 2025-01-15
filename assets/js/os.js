@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         function loadTiles(tiles, backFunction = null) {
             tilesContainer.innerHTML = '';
-
+        
             tiles.forEach(tile => {
                 const tileElement = document.createElement('div');
                 tileElement.classList.add('tile');
@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", async () => {
                 tileElement.dataset.font = tile.font;
                 tileElement.dataset.bgImgTop = tile['bg-img-top'];
                 tileElement.dataset.bgImgFull = tile['bg-img-full'];
-
+        
                 tileElement.innerHTML = `
                     <img src="${tile.img}" alt="${tile.name}">
                     <span>${tile.name}</span>
                 `;
-
+        
                 tileElement.addEventListener('mouseenter', () => updateContent(tile));
-
+        
                 // Click event to load subgroup or open URL
                 tileElement.addEventListener('click', () => {
                     if (tile.subgroup) {
@@ -34,18 +34,31 @@ document.addEventListener("DOMContentLoaded", async () => {
                         window.open(tile.url, '_blank');
                     }
                 });
-
+        
                 tilesContainer.appendChild(tileElement);
             });
-
+        
+            // Check if a back button is needed
+            const existingBackButton = document.querySelector('.back-button');
+        
             if (backFunction) {
-                const backButton = document.createElement('button');
-                backButton.textContent = 'Back';
-                backButton.classList.add('back-button');
-                backButton.addEventListener('click', backFunction);
-                buttonRow.appendChild(backButton);
+                if (!existingBackButton) {
+                    // Create and append the back button only if it doesn't already exist
+                    const backButton = document.createElement('button');
+                    backButton.textContent = 'Back';
+                    backButton.classList.add('back-button');
+                    backButton.addEventListener('click', () => {
+                        // Call the back function and remove the back button
+                        backFunction();
+                        backButton.remove();
+                    });
+                    buttonRow.appendChild(backButton);
+                }
+            } else if (existingBackButton) {
+                // Remove the back button if it exists but is not needed anymore
+                existingBackButton.remove();
             }
-        }
+        }        
 
         function updateContent(tile) {
             const topImage = tile['bg-img-top'];
