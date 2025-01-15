@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const tilesContainer = document.querySelector('.tiles');
     const contentDiv = document.querySelector('.content-div');
+    const buttonRow = document.querySelector('.row')
 
     try {
         const response = await fetch('assets/json/tiles.json');
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 backButton.textContent = 'Back';
                 backButton.classList.add('back-button');
                 backButton.addEventListener('click', backFunction);
-                tilesContainer.appendChild(backButton);
+                buttonRow.appendChild(backButton);
             }
         }
 
